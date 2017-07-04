@@ -11,7 +11,7 @@ var swaggerRepo = require('swagger-repo');
 var DIST_DIR = 'web_deploy';
 
 gulp.task('serve', ['build', 'watch', 'edit'], function() {
-  portfinder.getPort({port: 3000}, function (err, port) {
+  portfinder.getPort({port: 3030}, function (err, port) {
     gulpConnect.server({
       root: [DIST_DIR],
       livereload: true,
@@ -26,7 +26,7 @@ gulp.task('serve', ['build', 'watch', 'edit'], function() {
 });
 
 gulp.task('edit', function() {
-  portfinder.getPort({port: 5000}, function (err, port) {
+  portfinder.getPort({port: 4040}, function (err, port) {
     var app = connect();
     app.use(swaggerRepo.swaggerEditorMiddleware());
     app.listen(port);
