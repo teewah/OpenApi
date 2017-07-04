@@ -84,8 +84,8 @@ securityDefinitions:
     # The following options are specific to apiKey type
     in: header # Where API key will be passed: header or query
     name: api_key # API key paramteer name
-  basic_auth: # security definition name (you can name it as you want)
-    type: basic
+  # basic_auth: # security definition name (you can name it as you want)
+    # type: basic
 
 # Holds the relative paths to the individual endpoints. The path is appended to the
 # basePath in order to construct the full URL.
