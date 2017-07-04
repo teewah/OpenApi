@@ -3,7 +3,7 @@
     "importExistingSpec": false,
     "name": "MFISA",
     "repo": "teewah/OpenApi",
-    "splitSpec": false,
+    "splitSpec": true,
     "samples": true,
     "installSwaggerUI": true
   }
